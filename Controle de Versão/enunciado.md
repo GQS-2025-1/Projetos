@@ -112,7 +112,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
            System.out.println("Número de portas: " + portas);
        }
    }
-```
+   ```
 
 3. Enviar para o GitHub:
 
@@ -128,7 +128,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 
 1. Criar uma nova branch:
 
-   ``sh
+   ```sh
    git checkout -b feature/moto
 
 2. Criar o arquivo Moto.java com o seguinte código:
