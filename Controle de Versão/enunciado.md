@@ -58,7 +58,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    ```sh
    checkout -b feature/veiculo
 
-2. Criar o arquivo Veiculo.java com o seguinte código:
+2. Criar o arquivo **Veiculo.java** com o seguinte código:
 
 ```java
    public class Veiculo {
@@ -77,85 +77,82 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
        }
    }
 
-Enviar para o GitHub:
+3. Enviar para o GitHub:
 
-sh
-Copiar
-Editar
-git add Veiculo.java
-git commit -m "Adiciona classe base Veiculo"
-git push origin feature/veiculo
-Criar um pull request para dev no GitHub.
+   ```sh
+   
+   git add Veiculo.java
+   git commit -m "Adiciona classe base Veiculo"
+   git push origin feature/veiculo
 
-2️⃣ Criar a Classe Carro (Aluno 2)
-Criar uma nova branch:
+4. Criar um **pull request para dev** no GitHub.
 
-sh
-Copiar
-Editar
-git checkout -b feature/carro
-Criar o arquivo Carro.java com o seguinte código:
+### 2️⃣ Criar a Classe Carro (Aluno 2)
 
-java
-Copiar
-Editar
-public class Carro extends Veiculo {
-    private int portas;
+1. Criar uma nova branch:
 
-    public Carro(String marca, String modelo, int ano, int portas) {
-        super(marca, modelo, ano);
-        this.portas = portas;
-    }
+   ```sh
+   git checkout -b feature/carro
 
-    @Override
-    public void exibirInfo() {
-        super.exibirInfo();
-        System.out.println("Número de portas: " + portas);
-    }
-}
-Enviar para o GitHub:
+2. Criar o arquivo **Carro.java** com o seguinte código:
 
-sh
-Copiar
-Editar
-git add Carro.java
-git commit -m "Adiciona classe Carro"
-git push origin feature/carro
-Criar um pull request para dev no GitHub.
+   ```java
+   
+   public class Carro extends Veiculo {
+       private int portas;
+   
+       public Carro(String marca, String modelo, int ano, int portas) {
+           super(marca, modelo, ano);
+           this.portas = portas;
+       }
+   
+       @Override
+       public void exibirInfo() {
+           super.exibirInfo();
+           System.out.println("Número de portas: " + portas);
+       }
+   }
 
-3️⃣ Criar a Classe Moto (Aluno 3)
-Criar uma nova branch:
+3. Enviar para o GitHub:
 
-sh
-Copiar
-Editar
-git checkout -b feature/moto
-Criar o arquivo Moto.java com o seguinte código:
+   ```sh
+   git add Carro.java
+   git commit -m "Adiciona classe Carro"
+   git push origin feature/carro
 
-java
-Copiar
-Editar
-public class Moto extends Veiculo {
-    private boolean partidaEletrica;
+4. Criar um **pull request para dev** no GitHub.
 
-    public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
-        super(marca, modelo, ano);
-        this.partidaEletrica = partidaEletrica;
-    }
+### 3️⃣ Criar a Classe Moto (Aluno 3)
 
-    @Override
-    public void exibirInfo() {
-        super.exibirInfo();
-        System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
-    }
-}
-Enviar para o GitHub:
+1. Criar uma nova branch:
 
-sh
-Copiar
-Editar
-git add Moto.java
-git commit -m "Adiciona classe Moto"
-git push origin feature/moto
-Criar um pull request para dev no GitHub.
+   ``sh
+   
+   git checkout -b feature/moto
 
+2. Criar o arquivo Moto.java com o seguinte código:
+
+   ```java
+   public class Moto extends Veiculo {
+       private boolean partidaEletrica;
+   
+       public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
+           super(marca, modelo, ano);
+           this.partidaEletrica = partidaEletrica;
+       }
+   
+       @Override
+       public void exibirInfo() {
+           super.exibirInfo();
+           System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
+       }
+   }
+
+3. Enviar para o GitHub:
+
+   ```sh
+   git add Moto.java
+   git commit -m "Adiciona classe Moto"
+   git push origin feature/moto
+
+4. Criar um **pull request para dev** no GitHub.
