@@ -14,7 +14,7 @@ Este repositório contém um projeto simples de **herança em Java**, desenvolvi
 - Formem um grupo de **três alunos**.
 - Criem um repositório no GitHub e cada membro deve **clonar** o projeto.
 Cada aluno será responsável por uma classe específica no projeto.
-- Devem criar **branches individuais** para suas implementações e usar **pull requests ** para mesclar o código na branch principal (main).
+- Devem criar **branches individuais** para suas implementações e usar **pull requests** para mesclar o código na branch principal (main).
 - No final, um dos membros deve rodar o código principal para validar se tudo está funcionando corretamente.
 
 ---
@@ -35,13 +35,17 @@ Cada aluno será responsável por uma classe específica no projeto.
 ---
 ### 2️⃣ Criar a Branch dev
 
-1. No repositório, vá até a aba **Code**.
-2. Clique no botão **Main** (onde está a branch atual).
-3. Digite dev e clique em **Create branch: dev from main**.
-4. Agora os alunos vão trabalhar na branch dev antes de integrar à main.
+1. O aluno responsável pelo repositório **cria a branch dev**:
+
+   - No repositório, vá até a aba **Code**.
+   - Clique no botão **Main** (onde está a branch atual).
+   - Digite dev e clique em **Create branch: dev from main**.
+
+2. Todos devem **trabalhar na branch** dev.
+
 ---
 ##  📚 Estrutura do projeto
-    ```
+    
     /projeto
      ├── src
      │   └── veiculos
@@ -60,7 +64,7 @@ Cada aluno criará uma **branch individual** para sua feature e abrir um pull re
 
 1. No GitHub, vá até a aba **Code**.
 2. No repositório, clique em **Add file > Create new file**.
-3. Nomeie o arquivo como **Veiculo.java**.
+3. Nomeie o arquivo como **src/veiculos/Veiculo.java**.
 4. Cole o seguinte código:
 
    ```java
@@ -91,7 +95,7 @@ Cada aluno criará uma **branch individual** para sua feature e abrir um pull re
 
 1. No GitHub, vá até a aba **Code>dev**.
 2. No repositório, clique em **Add file > Create new file**.
-3. Nomeie o arquivo como **Carro.java**.
+3. Nomeie o arquivo como **src/veiculos/Carro.java**.
 4. Cole o seguinte código:
    ```java
    package veiculos;
@@ -121,7 +125,7 @@ Cada aluno criará uma **branch individual** para sua feature e abrir um pull re
 
 1. No GitHub, vá até a aba **Code>dev**.
 2. No repositório, clique em **Add file > Create new file**.
-3. Nomeie o arquivo como **Moto.java**.
+3. Nomeie o arquivo como **src/veiculos/Moto.java**.
 4. Cole o seguinte código:
 
    ```java
@@ -163,7 +167,7 @@ Cada membro do grupo deve:
 
 1. No GitHub, vá até a branch dev.
 2. No repositório, clique em **Add file > Create new file**.
-3. Nomeie o arquivo como **Main.java**.
+3. Nomeie o arquivo como **src/app/Main.java**.
 4. Cole o seguinte código:
    ```java
    package app;
