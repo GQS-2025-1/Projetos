@@ -40,7 +40,7 @@ Cada aluno será responsável por uma classe específica no projeto.
 3. Digite dev e clique em **Create branch: dev from main**.
 4. Agora os alunos vão trabalhar na branch dev antes de integrar à main.
 ---
-##  Estrutura do projeto
+##  📚 Estrutura do projeto
     ```
     /projeto
      ├── src
@@ -50,7 +50,8 @@ Cada aluno será responsável por uma classe específica no projeto.
      │       ├── Carro.java
      │   └── app
      │       ├── Main.java
-   ```
+   
+
 
 ---
 ## 🛠️ Implementação do Código
