@@ -166,17 +166,21 @@ Cada membro do grupo deve:
 5. Faça o **commit na branch dev**.
 6. Abra um **pull request para main** e, após revisão, faça o merge.
 
-## 🏁 Rodar o Código
+## 🏁 Rodar o Código usando GitHub Codespaces
 
-1. Todos os alunos devem atualizar o repositório local:
+### Passo 1: Ativar Codespaces
+1. Vá até seu repositório no GitHub.
+2. Clique no botão **Code**.
+3. Vá até a aba **Codespaces** e clique em **Create codespace on main**.
 
-   ```sh
-   git checkout main
-   git pull origin main
+### Passo 2: Executar Código Java
+No terminal do Codespaces, use os seguintes comandos:
 
-2. Compilar e executar:
+1. Compilar o código:
+   ```bash
+   javac Main.java
 
-   ```sh
-   javac Main.java Veiculo.java Carro.java Moto.java
+2. Executar o código:
+   ```bash
    java Main
 
