@@ -60,23 +60,23 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 
 2. Criar o arquivo **Veiculo.java** com o seguinte código:
 
-```java
-   public class Veiculo {
-       protected String marca;
-       protected String modelo;
-       protected int ano;
-   
-       public Veiculo(String marca, String modelo, int ano) {
-           this.marca = marca;
-           this.modelo = modelo;
-           this.ano = ano;
-       }
-   
-       public void exibirInfo() {
-           System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Ano: " + ano);
-       }
-   }
-```
+   ```java
+      public class Veiculo {
+          protected String marca;
+          protected String modelo;
+          protected int ano;
+      
+          public Veiculo(String marca, String modelo, int ano) {
+              this.marca = marca;
+              this.modelo = modelo;
+              this.ano = ano;
+          }
+      
+          public void exibirInfo() {
+              System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Ano: " + ano);
+          }
+      }
+   ```
 3. Enviar para o GitHub:
 
    ```sh
@@ -96,23 +96,22 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 
 2. Criar o arquivo **Carro.java** com o seguinte código:
 
-```java
-   
-   public class Carro extends Veiculo {
-       private int portas;
-   
-       public Carro(String marca, String modelo, int ano, int portas) {
-           super(marca, modelo, ano);
-           this.portas = portas;
-       }
-   
-       @Override
-       public void exibirInfo() {
-           super.exibirInfo();
-           System.out.println("Número de portas: " + portas);
-       }
-   }
-```
+   ```java  
+      public class Carro extends Veiculo {
+          private int portas;
+      
+          public Carro(String marca, String modelo, int ano, int portas) {
+              super(marca, modelo, ano);
+              this.portas = portas;
+          }
+      
+          @Override
+          public void exibirInfo() {
+              super.exibirInfo();
+              System.out.println("Número de portas: " + portas);
+          }
+      }
+   ```
 
 3. Enviar para o GitHub:
 
@@ -133,22 +132,22 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 
 2. Criar o arquivo Moto.java com o seguinte código:
 
-```java
-      public class Moto extends Veiculo {
-          private boolean partidaEletrica;
-      
-          public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
-              super(marca, modelo, ano);
-              this.partidaEletrica = partidaEletrica;
-          }
-      
-          @Override
-          public void exibirInfo() {
-              super.exibirInfo();
-              System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
-          }
-      }
-```
+   ```java
+         public class Moto extends Veiculo {
+             private boolean partidaEletrica;
+         
+             public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
+                 super(marca, modelo, ano);
+                 this.partidaEletrica = partidaEletrica;
+             }
+         
+             @Override
+             public void exibirInfo() {
+                 super.exibirInfo();
+                 System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
+             }
+         }
+   ```
 
 3. Enviar para o GitHub:
 
