@@ -112,7 +112,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
            System.out.println("Número de portas: " + portas);
        }
    }
-
+```
 3. Enviar para o GitHub:
 
    ```sh
@@ -147,7 +147,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
            System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
        }
    }
-
+```
 3. Enviar para o GitHub:
 
    ```sh
