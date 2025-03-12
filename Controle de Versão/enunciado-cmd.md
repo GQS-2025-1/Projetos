@@ -75,7 +75,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 1. Criar uma nova branch:
 
    ```sh
-   checkout -b feature/veiculo
+   git checkout -b feature/veiculo
 
 2. Criar o arquivo **Veiculo.java** com o seguinte código:
 
