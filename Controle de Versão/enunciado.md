@@ -113,6 +113,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
        }
    }
 ```
+
 3. Enviar para o GitHub:
 
    ```sh
@@ -122,32 +123,33 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 
 4. Criar um **pull request para dev** no GitHub.
 
+
 ### 3️⃣ Criar a Classe Moto (Aluno 3)
 
 1. Criar uma nova branch:
 
    ``sh
-   
    git checkout -b feature/moto
 
 2. Criar o arquivo Moto.java com o seguinte código:
 
-   ```java
-   public class Moto extends Veiculo {
-       private boolean partidaEletrica;
-   
-       public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
-           super(marca, modelo, ano);
-           this.partidaEletrica = partidaEletrica;
-       }
-   
-       @Override
-       public void exibirInfo() {
-           super.exibirInfo();
-           System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
-       }
-   }
-```
+```java
+      public class Moto extends Veiculo {
+          private boolean partidaEletrica;
+      
+          public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
+              super(marca, modelo, ano);
+              this.partidaEletrica = partidaEletrica;
+          }
+      
+          @Override
+          public void exibirInfo() {
+              super.exibirInfo();
+              System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
+          }
+      }
+   ```
+
 3. Enviar para o GitHub:
 
    ```sh
