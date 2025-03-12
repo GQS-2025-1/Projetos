@@ -41,7 +41,7 @@ Cada aluno será responsável por uma classe específica no projeto.
    git clone <URL_DO_REPOSITORIO>
    cd sistema-veiculos
    
-2. O aluno responsável pelo repositório cria a branch dev e a envia para o GitHub:
+2. O aluno responsável pelo repositório **cria a branch dev** e a envia para o GitHub:
 
    ```sh
    git checkout -b dev
@@ -56,7 +56,7 @@ Todos devem trabalhar na branch dev.
 
 ---
 ##  📚 Estrutura do projeto
-    ```
+   
     /projeto
      ├── src
      │   └── veiculos
@@ -100,8 +100,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 3. Enviar para o GitHub:
 
    ```sh
-   
-   git add Veiculo.java
+   git add src/veiculos/Veiculo.java
    git commit -m "Adiciona classe base Veiculo"
    git push origin feature/veiculo
 
@@ -137,7 +136,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 3. Enviar para o GitHub:
 
    ```sh
-   git add Carro.java
+   git add src/veiculos/Carro.java
    git commit -m "Adiciona classe Carro"
    git push origin feature/carro
 
@@ -151,7 +150,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    ```sh
    git checkout -b feature/moto
 
-2. Criar o arquivo Moto.java com o seguinte código:
+2. Criar o arquivo **Moto.java** com o seguinte código:
 
    ```java
    package veiculos;
@@ -174,7 +173,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 3. Enviar para o GitHub:
 
    ```sh
-   git add Moto.java
+   git add src/veiculos/Moto.java
    git commit -m "Adiciona classe Moto"
    git push origin feature/moto
 
@@ -192,7 +191,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    ```sh
    git checkout -b feature/main
 
-2. Criar o arquivo ** Main.java ** com o seguinte código:
+2. Criar o arquivo **Main.java** com o seguinte código:
 
    ```java
    package app;
@@ -213,7 +212,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 3. Enviar para o GitHub:
 
    ```sh
-   git add Main.java
+   git add src/app/Main.java
    git commit -m "Adiciona classe Main para testes"
    git push origin feature/main
 
@@ -232,5 +231,8 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 2. Compilar e executar:
 
    ```sh
-   javac Main.java Veiculo.java Carro.java Moto.java
-   java Main
+   javac src/app/Main.java
+   javac src/veiculos/Veiculo.java
+   javac src/veiculos/Carro.java
+   javac src/veiculos/Moto.java
+   java src/app/Main
