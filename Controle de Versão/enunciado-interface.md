@@ -41,15 +41,16 @@ Cada aluno será responsável por uma classe específica no projeto.
 4. Agora os alunos vão trabalhar na branch dev antes de integrar à main.
 ---
 ##  Estrutura do projeto
- ```sh
- /projeto
-  ├── src
-  │   └── veiculos
-  │       ├── Veiculo.java
-  │       ├── Moto.java
-  │       ├── Carro.java
-  │   └── app
-  │       ├── Main.java
+    ```
+    /projeto
+     ├── src
+     │   └── veiculos
+     │       ├── Veiculo.java
+     │       ├── Moto.java
+     │       ├── Carro.java
+     │   └── app
+     │       ├── Main.java
+   ```
 
 ---
 ## 🛠️ Implementação do Código
@@ -192,4 +193,4 @@ Cada membro do grupo deve:
 
 ### Passo 2: Executar Código Java
 
-1. 
+1. Clique na aba **Run and Debug** no Codespaces.
