@@ -14,7 +14,7 @@ Este repositório contém um projeto simples de **herança em Java**, desenvolvi
 - Formem um grupo de **três alunos**.
 - Criem um repositório no GitHub e cada membro deve **clonar** o projeto.
 Cada aluno será responsável por uma classe específica no projeto.
-- Devem criar **branches individuais** para suas implementações e usar **pull requests ** para mesclar o código na branch principal (main).
+- Devem criar **branches individuais** para suas implementações e usar **pull requests** para mesclar o código na branch principal (main).
 - No final, um dos membros deve rodar o código principal para validar se tudo está funcionando corretamente.
 
 ---
@@ -52,7 +52,7 @@ Cada aluno será responsável por uma classe específica no projeto.
    ```sh
    git pull origin dev
 
-Todos devem trabalhar na branch dev.
+Todos devem **trabalhar na branch** dev.
 
 ---
 ##  📚 Estrutura do projeto
@@ -69,7 +69,8 @@ Todos devem trabalhar na branch dev.
 ---
 ## 🛠️ Implementação do Código
 
-Cada aluno criará uma **branch individual ** para sua feature e fará um pull request para dev.
+Cada aluno criará uma **branch individual** para sua feature e fará um pull request para dev.
+
 ### 1️⃣ Criar a Classe Veiculo (Aluno 1)
 
 1. Criar uma nova branch:
@@ -97,7 +98,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
        }
    }
    ```
-3. Enviar para o GitHub:
+3. Adicionar, commitar e enviar para o GitHub:
 
    ```sh
    git add src/veiculos/Veiculo.java
@@ -105,6 +106,15 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    git push origin feature/veiculo
 
 4. Criar um **pull request para dev** no GitHub.
+   - Acesse o repositório no GitHub.
+   - Vá para a aba **Pull Requests**.
+   - Clique no botão verde **New pull request**.
+   - No campo **base**, selecione dev (a branch de destino).
+   - No campo **compare**, selecione sua branch (feature/carro, feature/moto, etc.).
+   - Revise as mudanças e clique em **Create pull request**.
+   - Adicione um título descritivo e um comentário explicando o que foi feito.
+   - Clique em **Create pull request** novamente.
+
 
 ### 2️⃣ Criar a Classe Carro (Aluno 2)
 
@@ -133,7 +143,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    }
    ```
 
-3. Enviar para o GitHub:
+3. Adicionar, commitar e enviar para o GitHub:
 
    ```sh
    git add src/veiculos/Carro.java
@@ -141,6 +151,14 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    git push origin feature/carro
 
 4. Criar um **pull request para dev** no GitHub.
+   - Acesse o repositório no GitHub.
+   - Vá para a aba **Pull Requests**.
+   - Clique no botão verde **New pull request**.
+   - No campo **base**, selecione dev (a branch de destino).
+   - No campo **compare**, selecione sua branch (feature/carro, feature/moto, etc.).
+   - Revise as mudanças e clique em **Create pull request**.
+   - Adicione um título descritivo e um comentário explicando o que foi feito.
+   - Clique em **Create pull request** novamente.
 
 
 ### 3️⃣ Criar a Classe Moto (Aluno 3)
@@ -170,7 +188,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    }
    ```
 
-3. Enviar para o GitHub:
+3. Adicionar, commitar e enviar para o GitHub:
 
    ```sh
    git add src/veiculos/Moto.java
@@ -178,10 +196,18 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    git push origin feature/moto
 
 4. Criar um **pull request para dev** no GitHub.
+   - Acesse o repositório no GitHub.
+   - Vá para a aba **Pull Requests**.
+   - Clique no botão verde **New pull request**.
+   - No campo **base**, selecione dev (a branch de destino).
+   - No campo **compare**, selecione sua branch (feature/carro, feature/moto, etc.).
+   - Revise as mudanças e clique em **Create pull request**.
+   - Adicione um título descritivo e um comentário explicando o que foi feito.
+   - Clique em **Create pull request** novamente.
 
 ## ✅ Revisão e Aprovação
 1. Cada aluno revisa os **pull requests** (feature/veiculo, feature/carro, feature/moto).
-2. Após revisão e aprovação, fazem merge para dev.
+2. Após revisão e aprovação, fazem merge para dev, clicando em **Merge pull request**.
 3. Quando **dev** estiver completo, um dos alunos cria um **pull request de dev para main** e a equipe revisa antes de aprovar o merge.
 
 ## 🚀 Criar a Classe Main e Testar
@@ -209,7 +235,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    }
    ```
    
-3. Enviar para o GitHub:
+3. Adicionar, commitar e enviar para o GitHub:
 
    ```sh
    git add src/app/Main.java
