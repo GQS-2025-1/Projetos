@@ -33,10 +33,18 @@ Cada aluno será responsável por uma classe específica no projeto.
 2. O dono do repositório deve ir até **Settings > Collaborators** e adicionar os colegas como **colaboradores**. Os alunos convidados receberão um e-mail e devem aceitar o convite.
 
 ---
+### 2️⃣ Criar a Branch dev
 
+1. No repositório, vá até a aba **Code**.
+2. Clique no botão **Main** (onde está a branch atual).
+3. Digite dev e clique em **Create branch: dev from main**.
+4. Agora os alunos vão trabalhar na branch dev antes de integrar à main.
+   
+---
 ## 🛠️ Implementação do Código
 
-Cada aluno criará uma **branch individual ** para sua feature e fará um pull request para dev.
+Cada aluno criará uma **branch individual ** para sua feature e abrir um pull request para dev.
+
 ### 1️⃣ Criar a Classe Veiculo (Aluno 1)
 
 1. No GitHub, vá até a aba **Code**.
@@ -64,12 +72,12 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 5. **Antes de salvar**, clique em ** Create a new branch**.
     - Nomeie a branch como **feature/veiculo**.
     - Clique em **Propose new file**.
-6. Clique em **Create pull request**.
+6. Clique em **Create pull request** e direcione-o para a branch dev.
 7. Aguarde os colegas revisarem e aprovarem.
 
 ### 2️⃣ Criar a Classe Carro (Aluno 2)
 
-1. No GitHub, vá até a aba **Code**.
+1. No GitHub, vá até a aba **Code>dev**.
 2. No repositório, clique em **Add file > Create new file**.
 3. Nomeie o arquivo como **Carro.java**.
 4. Cole o seguinte código:
@@ -93,12 +101,12 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 5. **Antes de salvar**, clique em **Create a new branch**.
    - Nomeie a branch como **feature/carro**.
    - Clique em **Propose new file**.
-6. Clique em **Create pull request**.
+6. Clique em **Create pull request** e direcione-o para a branch dev.
 7. Aguarde a revisão dos colegas.
 
 ### 3️⃣ Criar a Classe Moto (Aluno 3)
 
-1. No GitHub, vá até a aba **Code**.
+1. No GitHub, vá até a aba **Code>dev**.
 2. No repositório, clique em **Add file > Create new file**.
 3. Nomeie o arquivo como **Moto.java**.
 4. Cole o seguinte código:
@@ -123,21 +131,23 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 5. **Antes de salvar**, clique em **Create a new branch**.
    - Nomeie a branch como **feature/moto**.
    - Clique em **Propose new file**.
-6. Clique em **Create pull request**.
+6. Clique em **Create pull request** e direcione-o para a branch dev.
 7. Aguarde a revisão dos colegas.
 
 
 ## ✅ Revisão e Aprovação
+
 Cada membro do grupo deve:
 
 1. Ir até a aba **Pull requests**.
 2. Revisar os códigos dos colegas.
-3. Se estiver correto, clicar em **Merge pull request** para mesclar na main.
-4. Depois de mesclar, deletar as branches (feature/veiculo, feature/carro, feature/moto) para manter o repositório organizado.
+3. Se estiver correto, clicar em **Merge pull request** para mesclar na dev.
+4. **Após todos os merges em dev, um dos alunos deve abrir um pull request de dev para main**.
+5. A equipe revisa o código antes de aprovar o merge final.
 
 ## 🚀 Criar a Classe Main e Testar
 
-1. No GitHub, vá até a aba **Code**.
+1. No GitHub, vá até a branch dev.
 2. No repositório, clique em **Add file > Create new file**.
 3. Nomeie o arquivo como **Main.java**.
 4. Cole o seguinte código:
@@ -153,7 +163,8 @@ Cada membro do grupo deve:
        }
    }
    ```
-5. Selecione a branch main e clique em Commit changes.
+5. Faça o **commit na branch dev**.
+6. Abra um **pull request para main** e, após revisão, faça o merge.
 
 ## 🏁 Rodar o Código
 
