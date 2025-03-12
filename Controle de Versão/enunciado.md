@@ -6,7 +6,7 @@ Este repositório contém um projeto simples de **herança em Java**, desenvolvi
 
 ## 🚀 Objetivo
 - Implementar um **sistema de veículos usando herança** em Java.
-- Trabalhar em equipe utilizando **GitHub Flow**.
+- Trabalhar em equipe utilizando **GitHub Flow** (3 alunos).
 - Utilizar **branches, pull requests e merges** corretamente.
 
 ---
@@ -32,10 +32,130 @@ Este repositório contém um projeto simples de **herança em Java**, desenvolvi
    ```sh
    git clone <URL_DO_REPOSITORIO>
    cd sistema-veiculos
+   
 2. O aluno responsável pelo repositório cria a branch dev e a envia para o GitHub:
 
-```sh
-git checkout -b dev
-git push origin dev
+   ```sh
+   git checkout -b dev
+   git push origin dev
+   
+3. Todos os membros devem atualizar o repositório local para incluir a nova branch:
 
+   ```sh
+   git pull origin dev
+
+Todos devem trabalhar na branch dev.
+
+---
+
+## 🛠️ Implementação do Código
+
+Cada aluno criará uma **branch individual ** para sua feature e fará um pull request para dev.
+### 1️⃣ Criar a Classe Veiculo (Aluno 1)
+
+1. Criar uma nova branch:
+
+   ```sh
+   checkout -b feature/veiculo
+
+2. Criar o arquivo Veiculo.java com o seguinte código:
+
+```java
+   public class Veiculo {
+       protected String marca;
+       protected String modelo;
+       protected int ano;
+   
+       public Veiculo(String marca, String modelo, int ano) {
+           this.marca = marca;
+           this.modelo = modelo;
+           this.ano = ano;
+       }
+   
+       public void exibirInfo() {
+           System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Ano: " + ano);
+       }
+   }
+
+Enviar para o GitHub:
+
+sh
+Copiar
+Editar
+git add Veiculo.java
+git commit -m "Adiciona classe base Veiculo"
+git push origin feature/veiculo
+Criar um pull request para dev no GitHub.
+
+2️⃣ Criar a Classe Carro (Aluno 2)
+Criar uma nova branch:
+
+sh
+Copiar
+Editar
+git checkout -b feature/carro
+Criar o arquivo Carro.java com o seguinte código:
+
+java
+Copiar
+Editar
+public class Carro extends Veiculo {
+    private int portas;
+
+    public Carro(String marca, String modelo, int ano, int portas) {
+        super(marca, modelo, ano);
+        this.portas = portas;
+    }
+
+    @Override
+    public void exibirInfo() {
+        super.exibirInfo();
+        System.out.println("Número de portas: " + portas);
+    }
+}
+Enviar para o GitHub:
+
+sh
+Copiar
+Editar
+git add Carro.java
+git commit -m "Adiciona classe Carro"
+git push origin feature/carro
+Criar um pull request para dev no GitHub.
+
+3️⃣ Criar a Classe Moto (Aluno 3)
+Criar uma nova branch:
+
+sh
+Copiar
+Editar
+git checkout -b feature/moto
+Criar o arquivo Moto.java com o seguinte código:
+
+java
+Copiar
+Editar
+public class Moto extends Veiculo {
+    private boolean partidaEletrica;
+
+    public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
+        super(marca, modelo, ano);
+        this.partidaEletrica = partidaEletrica;
+    }
+
+    @Override
+    public void exibirInfo() {
+        super.exibirInfo();
+        System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
+    }
+}
+Enviar para o GitHub:
+
+sh
+Copiar
+Editar
+git add Moto.java
+git commit -m "Adiciona classe Moto"
+git push origin feature/moto
+Criar um pull request para dev no GitHub.
 
