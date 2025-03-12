@@ -56,7 +56,7 @@ Cada aluno será responsável por uma classe específica no projeto.
 ---
 ## 🛠️ Implementação do Código
 
-Cada aluno criará uma **branch individual ** para sua feature e abrir um pull request para dev.
+Cada aluno criará uma **branch individual** para sua feature e abrir um pull request para dev.
 
 ### 1️⃣ Criar a Classe Veiculo (Aluno 1)
 
@@ -83,7 +83,7 @@ Cada aluno criará uma **branch individual ** para sua feature e abrir um pull r
        }
    }
    ```
-5. **Antes de salvar**, clique em ** Create a new branch**.
+5. **Antes de salvar**, clique em **Create a new branch**.
     - Nomeie a branch como **feature/veiculo**.
     - Clique em **Propose new file**.
 6. Clique em **Create pull request** e direcione-o para a branch dev.
