@@ -6,8 +6,16 @@ Este repositório contém um projeto simples de **herança em Java**, desenvolvi
 
 ## 🚀 Objetivo
 - Implementar um **sistema de veículos usando herança** em Java.
-- Trabalhar em equipe utilizando **GitHub Flow** (3 alunos).
+- Trabalhar em equipe utilizando **GitHub Flow**.
 - Utilizar **branches, pull requests e merges** corretamente.
+
+---
+## 📕 Instruções Gerais
+- Formem um grupo de **três alunos**.
+- Criem um repositório no GitHub e cada membro deve **clonar** o projeto.
+Cada aluno será responsável por uma classe específica no projeto.
+- Devem criar **branches individuais** para suas implementações e usar **pull requests ** para mesclar o código na branch principal (main).
+- No final, um dos membros deve rodar o código principal para validar se tudo está funcionando corretamente.
 
 ---
 
