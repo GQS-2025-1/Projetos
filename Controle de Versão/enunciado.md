@@ -157,3 +157,55 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    git push origin feature/moto
 
 4. Criar um **pull request para dev** no GitHub.
+
+## ✅ Revisão e Aprovação
+1. Cada aluno revisa os **pull requests** (feature/veiculo, feature/carro, feature/moto).
+2. Após revisão e aprovação, fazem merge para dev.
+3. Quando **dev** estiver completo, um dos alunos cria um **pull request de dev para main** e a equipe revisa antes de aprovar o merge.
+
+## 🚀 Criar a Classe Main e Testar
+
+1. Criar uma nova branch:
+
+   ```sh
+   git checkout -b feature/main
+
+2. Criar o arquivo Main.java com o seguinte código:
+
+   ```java
+   public class Main {
+       public static void main(String[] args) {
+           Carro carro = new Carro("Toyota", "Corolla", 2022, 4);
+           Moto moto = new Moto("Honda", "CB 500", 2023, true);
+   
+           carro.exibirInfo();
+           System.out.println();
+           moto.exibirInfo();
+       }
+   }
+   ```
+   
+3. Enviar para o GitHub:
+
+```sh
+git add Main.java
+git commit -m "Adiciona classe Main para testes"
+git push origin feature/main
+
+4. Criar um **pull request para dev**, revisar e mesclar.
+
+5. Criar um **pull request de dev para main** e mesclar.
+
+## 🏁 Rodar o Código
+
+1. Todos os alunos devem atualizar o repositório local:
+
+```sh
+git checkout main
+git pull origin main
+
+2. Compilar e executar:
+
+```sh
+javac Main.java Veiculo.java Carro.java Moto.java
+java Main
