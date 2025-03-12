@@ -96,7 +96,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 
 2. Criar o arquivo **Carro.java** com o seguinte código:
 
-   ```java
+```java
    
    public class Carro extends Veiculo {
        private int portas;
@@ -112,7 +112,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
            System.out.println("Número de portas: " + portas);
        }
    }
-   ```
+```
 
 3. Enviar para o GitHub:
 
@@ -148,7 +148,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
               System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
           }
       }
-   ```
+```
 
 3. Enviar para o GitHub:
 
