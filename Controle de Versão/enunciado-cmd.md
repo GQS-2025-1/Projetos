@@ -55,7 +55,18 @@ Cada aluno será responsável por uma classe específica no projeto.
 Todos devem trabalhar na branch dev.
 
 ---
-
+##  📚 Estrutura do projeto
+    ```
+    /projeto
+     ├── src
+     │   └── veiculos
+     │       ├── Veiculo.java
+     │       ├── Moto.java
+     │       ├── Carro.java
+     │   └── app
+     │       ├── Main.java
+   
+---
 ## 🛠️ Implementação do Código
 
 Cada aluno criará uma **branch individual ** para sua feature e fará um pull request para dev.
@@ -69,6 +80,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 2. Criar o arquivo **Veiculo.java** com o seguinte código:
 
    ```java
+   package veiculos;
    public class Veiculo {
        protected String marca;
        protected String modelo;
@@ -105,6 +117,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 2. Criar o arquivo **Carro.java** com o seguinte código:
 
    ```java  
+   package veiculos;
    public class Carro extends Veiculo {
        private int portas;
    
@@ -141,6 +154,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 2. Criar o arquivo Moto.java com o seguinte código:
 
    ```java
+   package veiculos;
    public class Moto extends Veiculo {
        private boolean partidaEletrica;
    
@@ -181,6 +195,9 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 2. Criar o arquivo ** Main.java ** com o seguinte código:
 
    ```java
+   package app;
+   import veiculos.Carro;
+   import veiculos.Moto;
    public class Main {
        public static void main(String[] args) {
            Carro carro = new Carro("Toyota", "Corolla", 2022, 4);
