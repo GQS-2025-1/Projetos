@@ -39,7 +39,18 @@ Cada aluno será responsável por uma classe específica no projeto.
 2. Clique no botão **Main** (onde está a branch atual).
 3. Digite dev e clique em **Create branch: dev from main**.
 4. Agora os alunos vão trabalhar na branch dev antes de integrar à main.
-   
+---
+##  Estrutura do projeto
+ ```sh
+ /projeto
+  ├── src
+  │   └── veiculos
+  │       ├── Veiculo.java
+  │       ├── Moto.java
+  │       ├── Carro.java
+  │   └── app
+  │       ├── Main.java
+
 ---
 ## 🛠️ Implementação do Código
 
@@ -53,6 +64,7 @@ Cada aluno criará uma **branch individual ** para sua feature e abrir um pull r
 4. Cole o seguinte código:
 
    ```java
+   package veiculos;
    public class Veiculo {
        protected String marca;
        protected String modelo;
@@ -81,7 +93,8 @@ Cada aluno criará uma **branch individual ** para sua feature e abrir um pull r
 2. No repositório, clique em **Add file > Create new file**.
 3. Nomeie o arquivo como **Carro.java**.
 4. Cole o seguinte código:
-   ```java  
+   ```java
+   package veiculos;
    public class Carro extends Veiculo {
        private int portas;
    
@@ -112,6 +125,7 @@ Cada aluno criará uma **branch individual ** para sua feature e abrir um pull r
 4. Cole o seguinte código:
 
    ```java
+   package veiculos;
    public class Moto extends Veiculo {
        private boolean partidaEletrica;
    
@@ -152,6 +166,9 @@ Cada membro do grupo deve:
 3. Nomeie o arquivo como **Main.java**.
 4. Cole o seguinte código:
    ```java
+   package app;
+   import veiculos.Carro;
+   import veiculos.Moto;
    public class Main {
        public static void main(String[] args) {
            Carro carro = new Carro("Toyota", "Corolla", 2022, 4);
@@ -174,13 +191,5 @@ Cada membro do grupo deve:
 3. Vá até a aba **Codespaces** e clique em **Create codespace on main**.
 
 ### Passo 2: Executar Código Java
-No terminal do Codespaces, use os seguintes comandos:
 
-1. Compilar o código:
-   ```bash
-   javac Main.java
-
-2. Executar o código:
-   ```bash
-   java Main
-
+1. 
