@@ -170,7 +170,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    ```sh
    git checkout -b feature/main
 
-2. Criar o arquivo Main.java com o seguinte código:
+2. Criar o arquivo ** Main.java ** com o seguinte código:
 
    ```java
    public class Main {
@@ -187,10 +187,10 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
    
 3. Enviar para o GitHub:
 
-```sh
-git add Main.java
-git commit -m "Adiciona classe Main para testes"
-git push origin feature/main
+   ```sh
+   git add Main.java
+   git commit -m "Adiciona classe Main para testes"
+   git push origin feature/main
 
 4. Criar um **pull request para dev**, revisar e mesclar.
 
@@ -200,9 +200,9 @@ git push origin feature/main
 
 1. Todos os alunos devem atualizar o repositório local:
 
-```sh
-git checkout main
-git pull origin main
+   ```sh
+   git checkout main
+   git pull origin main
 
 2. Compilar e executar:
 
