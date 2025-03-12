@@ -1,1 +1,171 @@
+# 📌 Projeto: Sistema de Veículos - Desenvolvimento Colaborativo com GitHub
+
+Este repositório contém um projeto simples de **herança em Java**, desenvolvido por uma equipe utilizando **Git e GitHub** com um fluxo estruturado de branches (`main` e `dev`).
+
+---
+
+## 🚀 Objetivo
+- Implementar um **sistema de veículos usando herança** em Java.
+- Trabalhar em equipe utilizando **GitHub Flow**.
+- Utilizar **branches, pull requests e merges** corretamente.
+
+---
+## 📕 Instruções Gerais
+- Formem um grupo de **três alunos**.
+- Criem um repositório no GitHub e cada membro deve **clonar** o projeto.
+Cada aluno será responsável por uma classe específica no projeto.
+- Devem criar **branches individuais** para suas implementações e usar **pull requests ** para mesclar o código na branch principal (main).
+- No final, um dos membros deve rodar o código principal para validar se tudo está funcionando corretamente.
+
+---
+
+## 🔧 Configuração do Repositório
+
+### 1️⃣ Criar o Repositório no GitHub
+1. Um dos alunos deve criar um repositório no **GitHub**:
+   - Vá para [GitHub](https://github.com).
+   - Clique em **New repository**.
+   - Escolha um nome (exemplo: `sistema-veiculos`).
+   - Selecione **Public** ou **Private**.
+   - Marque **Add a README file**.
+   - Clique em **Create repository**.
+
+2. O dono do repositório deve ir até **Settings > Collaborators** e adicionar os colegas como **colaboradores**. Os alunos convidados receberão um e-mail e devem aceitar o convite.
+
+---
+
+## 🛠️ Implementação do Código
+
+Cada aluno criará uma **branch individual ** para sua feature e fará um pull request para dev.
+### 1️⃣ Criar a Classe Veiculo (Aluno 1)
+
+1. No GitHub, vá até a aba **Code**.
+2. No repositório, clique em **Add file > Create new file**.
+3. Nomeie o arquivo como **Veiculo.java**.
+4. Cole o seguinte código:
+
+   ```java
+   public class Veiculo {
+       protected String marca;
+       protected String modelo;
+       protected int ano;
+   
+       public Veiculo(String marca, String modelo, int ano) {
+           this.marca = marca;
+           this.modelo = modelo;
+           this.ano = ano;
+       }
+   
+       public void exibirInfo() {
+           System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Ano: " + ano);
+       }
+   }
+   ```
+5. **Antes de salvar**, clique em ** Create a new branch**.
+    - Nomeie a branch como **feature/veiculo**.
+    - Clique em **Propose new file**.
+6. Clique em **Create pull request**.
+7. Aguarde os colegas revisarem e aprovarem.
+
+### 2️⃣ Criar a Classe Carro (Aluno 2)
+
+1. No GitHub, vá até a aba **Code**.
+2. No repositório, clique em **Add file > Create new file**.
+3. Nomeie o arquivo como **Carro.java**.
+4. Cole o seguinte código:
+   ```java  
+   public class Carro extends Veiculo {
+       private int portas;
+   
+       public Carro(String marca, String modelo, int ano, int portas) {
+           super(marca, modelo, ano);
+           this.portas = portas;
+       }
+   
+       @Override
+       public void exibirInfo() {
+           super.exibirInfo();
+           System.out.println("Número de portas: " + portas);
+       }
+   }
+   ```
+
+5. **Antes de salvar**, clique em **Create a new branch**.
+   - Nomeie a branch como **feature/carro**.
+   - Clique em **Propose new file**.
+6. Clique em **Create pull request**.
+7. Aguarde a revisão dos colegas.
+
+### 3️⃣ Criar a Classe Moto (Aluno 3)
+
+1. No GitHub, vá até a aba **Code**.
+2. No repositório, clique em **Add file > Create new file**.
+3. Nomeie o arquivo como **Moto.java**.
+4. Cole o seguinte código:
+
+   ```java
+   public class Moto extends Veiculo {
+       private boolean partidaEletrica;
+   
+       public Moto(String marca, String modelo, int ano, boolean partidaEletrica) {
+           super(marca, modelo, ano);
+           this.partidaEletrica = partidaEletrica;
+       }
+   
+       @Override
+       public void exibirInfo() {
+           super.exibirInfo();
+           System.out.println("Possui partida elétrica: " + (partidaEletrica ? "Sim" : "Não"));
+       }
+   }
+   ```
+
+5. **Antes de salvar**, clique em **Create a new branch**.
+   - Nomeie a branch como **feature/moto**.
+   - Clique em **Propose new file**.
+6. Clique em **Create pull request**.
+7. Aguarde a revisão dos colegas.
+
+
+## ✅ Revisão e Aprovação
+Cada membro do grupo deve:
+
+1. Ir até a aba **Pull requests**.
+2. Revisar os códigos dos colegas.
+3. Se estiver correto, clicar em **Merge pull request** para mesclar na main.
+4. Depois de mesclar, deletar as branches (feature/veiculo, feature/carro, feature/moto) para manter o repositório organizado.
+
+## 🚀 Criar a Classe Main e Testar
+
+1. No GitHub, vá até a aba **Code**.
+2. No repositório, clique em **Add file > Create new file**.
+3. Nomeie o arquivo como **Main.java**.
+4. Cole o seguinte código:
+   ```java
+   public class Main {
+       public static void main(String[] args) {
+           Carro carro = new Carro("Toyota", "Corolla", 2022, 4);
+           Moto moto = new Moto("Honda", "CB 500", 2023, true);
+   
+           carro.exibirInfo();
+           System.out.println();
+           moto.exibirInfo();
+       }
+   }
+   ```
+5. Selecione a branch main e clique em Commit changes.
+
+## 🏁 Rodar o Código
+
+1. Todos os alunos devem atualizar o repositório local:
+
+   ```sh
+   git checkout main
+   git pull origin main
+
+2. Compilar e executar:
+
+   ```sh
+   javac Main.java Veiculo.java Carro.java Moto.java
+   java Main
 
