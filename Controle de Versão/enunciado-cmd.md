@@ -206,6 +206,6 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
 
 2. Compilar e executar:
 
-```sh
-javac Main.java Veiculo.java Carro.java Moto.java
-java Main
+   ```sh
+   javac Main.java Veiculo.java Carro.java Moto.java
+   java Main
