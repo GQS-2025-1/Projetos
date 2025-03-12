@@ -76,7 +76,7 @@ Cada aluno criará uma **branch individual ** para sua feature e fará um pull r
            System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Ano: " + ano);
        }
    }
-
+```
 3. Enviar para o GitHub:
 
    ```sh
