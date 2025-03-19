@@ -38,24 +38,28 @@ Cada aluno será responsável por uma parte do código e deverá criar uma **Iss
    - **Descrição:** Implementar a classe base com atributos comuns como `nome`, `vida` e `forca`.  
    - **Labels:** `feature`, `back-end`  
    - **Atribuído a:** Aluno 1  
+   - **Tipo:** feature
 
 2️⃣ **Criar a subclasse `Guerreiro`**  
    - **Título:** Criar a classe `Guerreiro`  
    - **Descrição:** Implementar a classe `Guerreiro`, herdando de `Personagem` e adicionando o atributo `espada`.  
    - **Labels:** `feature`, `back-end`  
    - **Atribuído a:** Aluno 2  
+   - **Tipo:** feature
 
 3️⃣ **Criar a subclasse `Mago`**  
    - **Título:** Criar a classe `Mago`  
    - **Descrição:** Implementar a classe `Mago`, herdando de `Personagem` e adicionando o atributo `mana`.  
    - **Labels:** `feature`, `back-end`  
    - **Atribuído a:** Aluno 3  
+   - **Tipo:** feature
 
 4️⃣ **Criar a classe `Main` para testes**  
    - **Título:** Criar a classe `Main.java`  
    - **Descrição:** Criar um programa principal para instanciar e testar `Guerreiro` e `Mago`.  
    - **Labels:** `test`, `back-end`  
    - **Atribuído a:** Qualquer aluno  
+   - **Tipo:** feature
 
 Cada Issue deve ser **movida para a coluna "To Do" no GitHub Project**.
 
